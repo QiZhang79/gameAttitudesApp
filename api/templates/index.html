@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Twitter Analysis</title>
+  </head>
+  <body>
+    <h1>Twitter Analysis</h1>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="static/nintendo.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nintendo</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Analysis results of tweets containing 'nintendo'.</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Number of tweets: <br/>{{analysis_count_nintendo}}</li>
+                <li class="list-group-item">Ratio of positive: <br/>{{analysis_point_nintendo}}</li>
+                <li class="list-group-item">Most related keywords<br/>{{wordcloud_sum_nintendo[0][0]}}:  {{wordcloud_sum_nintendo[0][1]}}<br/>{{wordcloud_sum_nintendo[1][0]}}:  {{wordcloud_sum_nintendo[1][1]}}<br/>{{wordcloud_sum_nintendo[2][0]}}:  {{wordcloud_sum_nintendo[2][1]}}<br/>{{wordcloud_sum_nintendo[3][0]}}:  {{wordcloud_sum_nintendo[3][1]}}<br/>{{wordcloud_sum_nintendo[4][0]}}:  {{wordcloud_sum_nintendo[4][1]}}<br/>{{wordcloud_sum_nintendo[5][0]}}: {{wordcloud_sum_nintendo[5][1]}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="static/ps.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Play Station</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Analysis results of tweets containing 'playstation'.</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Number of tweets: <br />{{analysis_count_playstation}}</li>
+                <li class="list-group-item">Ratio of positive: <br />{{analysis_point_playstation}}</li>
+                <li class="list-group-item">Most related keywords<br/>{{wordcloud_sum_playstation[0][0]}}:  {{wordcloud_sum_playstation[0][1]}}<br/>{{wordcloud_sum_playstation[1][0]}}:  {{wordcloud_sum_playstation[1][1]}}<br/>{{wordcloud_sum_playstation[2][0]}}:  {{wordcloud_sum_playstation[2][1]}}<br/>{{wordcloud_sum_playstation[3][0]}}:  {{wordcloud_sum_playstation[3][1]}}<br/>{{wordcloud_sum_playstation[4][0]}}:  {{wordcloud_sum_playstation[4][1]}}<br/>{{wordcloud_sum_playstation[5][0]}}:  {{wordcloud_sum_playstation[5][1]}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="static/xbox.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Xbox</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Analysis results of tweets containing 'xbox'.</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Number of tweets: <br />{{analysis_count_xbox}}</li>
+                <li class="list-group-item">Ratio of positive: <br />{{analysis_point_xbox}}</li>
+                <li class="list-group-item">Most related keywords<br/>{{wordcloud_sum_xbox[0][0]}}:  {{wordcloud_sum_xbox[0][1]}}<br/>{{wordcloud_sum_xbox[1][0]}}:  {{wordcloud_sum_xbox[1][1]}}<br/>{{wordcloud_sum_xbox[2][0]}}:  {{wordcloud_sum_xbox[2][1]}}<br/>{{wordcloud_sum_xbox[3][0]}}:  {{wordcloud_sum_xbox[3][1]}}<br/>{{wordcloud_sum_xbox[4][0]}}:  {{wordcloud_sum_xbox[4][1]}}<br/>{{wordcloud_sum_xbox[5][0]}}:  {{wordcloud_sum_xbox[5][1]}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

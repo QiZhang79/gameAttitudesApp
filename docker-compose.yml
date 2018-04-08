@@ -1,0 +1,36 @@
+version: '2'
+services:
+  api:
+    build: ./api
+    ports:
+      - "5000:5000"
+    links:
+      - db:mongodb
+    container_name: twitter-analysis-api
+    depends_on:
+      - db
+
+  collector:
+    build: ./collector
+    ports:
+      - "5555:5555"
+    links:
+      - api
+    container_name: twitter-analysis-collector
+    restart: always
+
+  analyzer:
+    build: ./analyzer
+    container_name: twitter-analysis-analyzer
+    links:
+      - collector
+      - api
+    depends_on:
+      - collector
+    restart: always
+
+  db:
+    image: mongo:3.0.2
+    container_name: twitter-analysis-db
+    ports:
+      - "27017:27017"
